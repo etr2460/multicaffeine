@@ -8,6 +8,15 @@ body {
   flex-wrap: wrap;
 }
 
+.help {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  width: 635px;
+  font-family: sans-serif;
+  margin: auto;
+}
+
 .wrapper {
   position: relative;
   margin-top: -149px;
