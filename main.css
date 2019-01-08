@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: -149px;
+}
+
+iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper.two {
+  height: calc(100vh + 149px);
+  width: 50vw;
+}
+
+.wrapper.four {
+  height: calc(50vh + 149px);
+  width: 50vw;
+}
+
+.wrapper.four:nth-child(1) {
+  z-index: 1;
+}
+
+.wrapper.four:nth-child(2) {
+  z-index: 1;
+}
