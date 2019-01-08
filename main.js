@@ -1,10 +1,7 @@
 const rootNode = document.getElementById("root");
-const path = location.pathname;
+const queryString = location.search.substr(1);
 
-const broadcasts = path
-  .split("/")
-  .slice(1)
-  .filter(broadcast => broadcast != "multicaffeine");
+const broadcasts = queryString.split("&");
 
 const wrapperClass = broadcasts.length < 3 ? "two" : "four";
 
